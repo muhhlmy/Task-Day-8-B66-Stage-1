@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Sentuhan Native CSS untuk Card */
+.custom-card-native {
+  transform: translateY(0);
+}
+
+.custom-card-native:hover {
+  transform: translateY(-8px);
+}
+
+.custom-card-glow {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: all 0.75s ease-in-out;
+  z-index: 1;
+}
+
+.custom-card-native:hover .custom-card-glow {
+  left: 150%;
+}

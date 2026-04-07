@@ -1,0 +1,35 @@
+<template id="projectCardTemplate">
+  <div class="w-full duration-300 transition-all custom-card-native">
+    <div
+      class="flex flex-col h-full shadow-md border-0 rounded-2xl p-4 bg-white hover:shadow-lg transition-shadow duration-300 relative overflow-hidden"
+    >
+      <div class="custom-card-glow"></div>
+
+      <img
+        class="project-image w-full rounded-xl object-cover"
+        alt="Project Image"
+        style="height: 200px;"
+      />
+      <div class="grow flex flex-col pt-4 relative z-10">
+        <h5 class="project-name font-bold text-lg mb-1 text-gray-900"></h5>
+        <p class="project-duration text-gray-500 text-xs mb-3"></p>
+        <p class="project-description text-gray-600 mb-4 line-clamp-3"></p>
+        <div
+          class="project-techs mb-4 text-gray-700 flex items-center gap-2"
+        ></div>
+        <div class="flex gap-2 w-full mt-auto">
+          <button
+            class="btn-view-details border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-200 w-full py-2 rounded-full font-medium hover:cursor-pointer"
+          >
+            View Details
+          </button>
+          <button
+            class="btn-delete bg-gray-900 hover:bg-gray-500 text-white transition-colors duration-200 w-1/2 py-2 rounded-full font-medium hover:cursor-pointer"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

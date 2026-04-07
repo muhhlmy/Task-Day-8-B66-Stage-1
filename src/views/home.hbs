@@ -1,0 +1,128 @@
+<section
+  id="homeSection"
+  class="bg-gray-100 flex-col w-full grow text-gray-800 flex items-center justify-center py-20 md:py-0 gap-10"
+>
+  {{! Hero (Photo & Hero Content) }}
+  <div
+    class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 items-center"
+  >
+    {{! Photo }}
+    <div
+      class="rounded-2xl overflow-hidden w-70 sm:w-[320px] md:w-full mx-auto md:col-span-5 lg:col-span-3 bg-white border border-gray-100 place-self-center hover:-translate-y-2 duration-300 transition-all"
+    >
+      <div class="w-full bg-gray-100 aspect-square overflow-hidden">
+        <img
+          src="/images/profile.png"
+          class="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+          alt="Photo"
+        />
+      </div>
+      <div class="p-5 text-center md:text-left">
+        <h2 class="font-bold text-lg lg:text-xl">
+          Muhammad Helmy
+        </h2>
+        <p class="text-sm text-gray-500 mt-1">
+          Fullstack Developer
+        </p>
+      </div>
+    </div>
+
+    {{! Hero Content }}
+    {{! Content Text }}
+    <div
+      class="w-full md:col-span-7 lg:col-span-9 flex flex-col gap-4 sm:gap-6 items-center md:items-start text-center md:text-left mt-4 md:mt-0"
+    >
+      <h6
+        class="uppercase font-bold text-gray-500 text-xs sm:text-sm tracking-widest"
+      >
+        Fullstack Developer
+      </h6>
+      <h2
+        class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-800"
+      >
+        Hi there! Nice to meet you!
+      </h2>
+      <p
+        class="text-base sm:text-lg lg:text-xl text-gray-600 tracking-normal leading-relaxed max-w-3xl"
+      >
+        Crafting digital experiences where high-end editorial aesthetics meet
+        robust architectural performance. I build scalable applications with a
+        focus on restrained design and purposeful interaction.
+      </p>
+
+      {{! Buttons Container }}
+      <div
+        class="flex flex-col xl:flex-row gap-8 xl:gap-4 justify-between items-center w-full mt-4 lg:mt-6"
+      >
+        {{! Buttons }}
+        <div
+          class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center"
+        >
+          <a
+            href="/contact"
+            class="w-full sm:w-auto py-3 sm:py-3.5 px-8 sm:px-10 bg-gray-800 rounded-full text-white hover:cursor-pointer hover:-translate-y-1 hover:shadow-xl hover:bg-gray-800 duration-300 transition-all font-semibold"
+          >
+            Contact Me
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1oPvbJ0Uco0fnF1QJs1hy4bq7SaKO-Sc4/view"
+            target="_blank"
+            class="w-full sm:w-auto flex gap-3 justify-center items-center py-3 sm:py-3.5 px-8 sm:px-10 border-2 border-gray-300 rounded-full hover:bg-gray-800 hover:border-gray-800 hover:text-white text-gray-800 hover:shadow-xl duration-300 transition-all font-semibold"
+          >
+            Download CV
+            <i class="fa-solid fa-circle-down"></i>
+          </a>
+        </div>
+
+        {{! Social }}
+        <div class="flex justify-center items-center gap-4 sm:gap-5 text-xl">
+          <a
+            href="https://www.linkedin.com/in/muh-hlmy/"
+            target="_blank"
+            class="flex justify-center items-center h-12 w-12 sm:h-14 sm:w-14 bg-white rounded-full hover:-translate-y-1 duration-300 transition-all shadow-md hover:shadow-lg text-gray-700 hover:text-gray-800 border border-gray-100"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/muhhl.my/"
+            target="_blank"
+            class="flex justify-center items-center h-12 w-12 sm:h-14 sm:w-14 bg-white rounded-full hover:-translate-y-1 duration-300 transition-all shadow-md hover:shadow-lg text-gray-700 hover:text-gray-800 border border-gray-100"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://github.com/muhhlmy/"
+            target="_blank"
+            class="flex justify-center items-center h-12 w-12 sm:h-14 sm:w-14 bg-white rounded-full hover:-translate-y-1 duration-300 transition-all shadow-md hover:shadow-lg text-gray-700 hover:text-gray-800 border border-gray-100"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{! Tech Cards }}
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col bg-white justify-center p-8 rounded-2xl">
+      <h2 class="font-bold text-xl">
+        Tech Stack
+      </h2>
+
+      {{! Tech Container }}
+      <div
+        id="techCardContainer"
+        class="grid grid-cols-1 lg:grid-cols-3 text-white gap-4 mt-6"
+      >
+        {{! Tech Card }}
+        <div
+          class="flex gap-3 item-center bg-gray-800 text-lg font-semibold justify-center p-3 rounded-lg"
+        >
+          <i class="fa-brands fa-html5 text-3xl"></i>
+          <p>
+            HTML
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

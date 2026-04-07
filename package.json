@@ -1,0 +1,23 @@
+{
+  "name": "task-day-8-b66-stage-1",
+  "version": "1.0.0",
+  "description": "Project ini menggunakan teknologi berbasis **Node.js** dengan *framework* bernama **Express.js**. Untuk tampilannya, kita menggunakan *template engine* bernama **Handlebars (`.hbs`)**, dan desainnya menggunakan **Tailwind CSS**.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "tw": "npx @tailwindcss/cli -i ./public/css/input.css -o ./public/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.1",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
